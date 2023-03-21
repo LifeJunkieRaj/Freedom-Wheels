@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Routes Map</title>
+	<script>
+		function showRiverviewIntermediateMap() {
+			document.getElementById("riverview-intermediate-map").style.display = "block";
+			document.getElementById("riverview-expert-map").style.display = "none";
+			document.getElementById("brandon-intermediate-map").style.display = "none";
+			document.getElementById("brandon-expert-map").style.display = "none";
+		}
+		function showRiverviewExpertMap() {
+			document.getElementById("riverview-intermediate-map").style.display = "none";
+			document.getElementById("riverview-expert-map").style.display = "block";
+			document.getElementById("brandon-intermediate-map").style.display = "none";
+			document.getElementById("brandon-expert-map").style.display = "none";
+		}
+		function showBrandonIntermediateMap() {
+			document.getElementById("riverview-intermediate-map").style.display = "none";
+			document.getElementById("riverview-expert-map").style.display = "none";
+			document.getElementById("brandon-intermediate-map").style.display = "block";
+			document.getElementById("brandon-expert-map").style.display = "none";
+		}
+		function showBrandonExpertMap() {
+			document.getElementById("riverview-intermediate-map").style.display = "none";
+			document.getElementById("riverview-expert-map").style.display = "none";
+			document.getElementById("brandon-intermediate-map").style.display = "none";
+			document.getElementById("brandon-expert-map").style.display = "block";
+		}
+	</script>
+</head>
+<body>
+
+	<div style="display: flex;">
+		<div style="flex: 1;">
+			<h2>Riverview/Valrico</h2>
+			<button onclick="showRiverviewIntermediateMap()">Intermediate Route</button>
+			<button onclick="showRiverviewExpertMap()">Expert Route</button>
+		</div>
+		<div style="flex: 1;">
+			<h2>Brandon/Valrico</h2>
+			<button onclick="showBrandonIntermediateMap()">Intermediate Route</button>
+			<button onclick="showBrandonExpertMap()">Expert Route</button>
+		</div>
+	</div>
+
+	<div style="display: flex;">
+		<div style="flex: 1;">
+			<h2>Intermediate Route</h2>
+			<div id="riverview-intermediate-map" style="display: none;">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m44!1m12!1m3!1d19951.7134864469!2d-82.25488833339323!3d27.871332538102905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m29!3e0!4m5!1s0x88c2d18051afef5b%3A0xd8096e6966227a75!2sPublix%20Super%20Market%20at%20Goolsby%20Point%20Shopping%20Center%2C%2011667%20Boyette%20Rd%2C%20Riverview%2C%20FL%2033569!3m2!1d27.8521103!2d-82.3041161!4m5!1s0x88dd2d3bc8250819%3A0x63001f99666f11f1!2sWinn-Dixie!3m2!1d27.8611246!2d-82.2010007!4m5!1s0x88c2d29e7cc98cbd%3A0xb25c43345bd13134!2sRosati&#39;s%20Pizza!3m2!1d27.892504!2d-82.241886!4m5!1s0x88c2d27702c11e2d%3A0xe0de967fdb181b38!2sPublix%2C%20East%20Bloomingdale%20Avenue%2C%20Bloomingdale%2C%20FL!3m2!1d27.890948899999998!2d-82.27011279999999!4m3!3m2!1d27.852107099999998!2d-82.3041002!5e0!3m2!1sen!2sus!4v1679092421892!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	        </div>
+			<div id="brandon-intermediate-map" style="display: none;">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m48!1m12!1m3!1d28205.680508860783!2d-82.29794791970865!3d27.910869420900124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m33!3e0!4m5!1s0x88c2cdd203026f4d%3A0xc9e787220144f6a4!2sOffice%20Depot%2C%20475%20W%20Brandon%20Blvd%2C%20Brandon%2C%20FL%2033511!3m2!1d27.9365825!2d-82.2915084!4m5!1s0x88c2cdb6399f61bd%3A0x5d2d53e832d7e4c!2sJamie&#39;s%20Air%20Conditioning!3m2!1d27.9346517!2d-82.27900269999999!4m3!3m2!1d27.893743399999998!2d-82.24388859999999!4m3!3m2!1d27.8949063!2d-82.31852959999999!4m3!3m2!1d27.9231789!2d-82.3170428!4m3!3m2!1d27.936639999999997!2d-82.2938209!4m3!3m2!1d27.9366195!2d-82.29141709999999!5e0!3m2!1sen!2sus!4v1679095167087!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	        </div>
+		</div>
+		<div style="flex: 1;">
+			<h2>Expert Route</h2>
+			<div id="riverview-expert-map" style="display: none;">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m60!1m12!1m3!1d47441.38617918118!2d-82.31006256773105!3d27.89883922537549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m45!3e0!4m5!1s0x88c2d18051afef5b%3A0xd8096e6966227a75!2sPublix%20Super%20Market%20at%20Goolsby%20Point%20Shopping%20Center%2C%2011667%20Boyette%20Rd%2C%20Riverview%2C%20FL%2033569!3m2!1d27.8521103!2d-82.3041161!4m5!1s0x88c2d1a3d3fb1611%3A0x57909c5cfe9ddfbf!2sBurger%20King%2C%209660%20US-301%2C%20Riverview%2C%20FL%2033578!3m2!1d27.8577327!2d-82.32601199999999!4m3!3m2!1d27.936872599999997!2d-82.2939404!4m5!1s0x88c2cdddc0e671c9%3A0xb080bdcc2d2f6db0!2sO&#39;Brien&#39;s%20Irish%20Pub%20%26%20Grill!3m2!1d27.9217639!2d-82.29486639999999!4m5!1s0x88c2d20657d52d37%3A0x6d8d8a432ca7c1c6!2sExxon!3m2!1d27.893435699999998!2d-82.2936017!4m5!1s0x88c2d1d6cc1a703d%3A0x2076347b1385c663!2sWolfe&#39;s%20Produce%2C%206005%20FL-43%2C%20Riverview%2C%20FL%2033578!3m2!1d27.892930699999997!2d-82.3380621!4m5!1s0x88c2d1a3c8fa5087%3A0xa58993627e37cb1f!2sRiverview%20Fresh%20Market!3m2!1d27.858927299999998!2d-82.3272728!4m3!3m2!1d27.8521711!2d-82.3040609!5e0!3m2!1sen!2sus!4v1679094295200!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	        </div>
+			<div id="brandon-expert-map" style="display: none;">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m50!1m12!1m3!1d67058.39917454518!2d-82.2961687719565!3d27.95339357739637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m35!3e0!4m5!1s0x88c2cdd203026f4d%3A0xc9e787220144f6a4!2sOffice%20Depot%2C%20475%20W%20Brandon%20Blvd%2C%20Brandon%2C%20FL%2033511!3m2!1d27.9365825!2d-82.2915084!4m3!3m2!1d27.9566403!2d-82.3271079!4m3!3m2!1d27.9971164!2d-82.32593279999999!4m3!3m2!1d28.0038058!2d-82.2860245!4m3!3m2!1d27.981636899999998!2d-82.28979749999999!4m3!3m2!1d27.974673499999998!2d-82.326645!4m3!3m2!1d27.9390929!2d-82.3235993!4m3!3m2!1d27.9366135!2d-82.29156619999999!5e0!3m2!1sen!2sus!4v1679096712332!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
